@@ -1,0 +1,34 @@
+Teste Ano Passado
+
+1)
+comunicacao
+planeamento
+modelacao
+desenvolvimento
+entrega
+
+2)
+São momentos onde a equipa se encontra para falar sobre o futuro do projeto e as atividade a serem feitas
+
+3)
+A afimação +e verdadeira pois os metodos adaptativos são metodos que se adaptam às mudanças no sistema e incrementam ao software
+
+4)
+Requisitos Funcionais (sao requisitos que têm alguma ação por parte do utilizador)
+Requisitos Não Funcionais (sao requisitos que não precisam de intervencao do utilizador e são apenas feitos por parte do sistema)
+
+5)
+Sim pois existem linguagem de programação que tambem permitem
+
+6)
+alt -> pode ter várias condições e faz a que é verdadeira
+par -> apenas tem 1 condição e só é feito caso essa seja verdadeira
+
+7)
+Serve para funcoes que comunicam com sigo mesmas como por exemplo validações
+
+9)
+req func: prench form, consult ped, alt form, infos, enviar form, efect reg
+,analisar pedidos, aceitar, pedir outra analise, rejeitar
+
+req nao func: calc orc, gerar resultado

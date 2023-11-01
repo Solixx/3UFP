@@ -1,0 +1,102 @@
+Redes - Ficha 2
+
+__
+1)
+a)	Com o aumento de termos a onda fica cada vez mais parecida com a onda original do sinal da informação. A bandwidth do sinal aumenta à medida que são adicionados termos o que pode fazer com que o aumento de termos não seja a melhor opção em alguns casos.
+
+b)	Quanto maior o numero de dados (frequencia) maior a bandwidth. Porque a bandwidth é diretamente proporcional à taxa de mudança do sinal então sinais que mudam rapidamente exigem mais bandwidth e ondas quadradas são caraterizadas por alternar rapidamente entre dois estados.
+
+__
+2)
+a)	Signal: É a forma de passar informação como ondas, som, luz,etc..
+	Channel Bandwidth: É a capacidade de uma via de comunicação, quanto maior for a bandwidth mais dados podem ser transmitidos.
+
+b)	Digital transmission: Sequência discreta de valores quantificados (0-1)
+	Analog transmission: variação continua na amplitude e no tempo
+
+__
+3)
+a)
+	C= 4000*log2(8)
+	L = 8
+	C = 12000
+
+b)
+	C= 4000*log2(2)
+	L = 2
+	C = 4000
+
+c)	Pelo teorema de Nyquist podemos melhorar a data rate ao aumentar a bandwidth ou com o aumento de níveis.
+
+d)	Quando a data rate que o recetor recebe é muito grande para a channel bandwidth vai existir perda de sinais/dados oq eu pode fazer com que o sinal final seja diferente do original.
+
+__
+4)
+
+20000=4000*log2(x)y
+log2(x) = 20000/4000
+log2(x) = 5
+2^5 = x
+x = 35
+
+É possível ao usar nível = 35
+
+__
+5)
+
+Nyquist Theorem
+C = 2 * 6,000,000 Hz * log2(4)
+C = 24,000,000
+
+Shannon Theorem
+SNR = 10^(SNR_dB/10) = 10^(30/10)
+SNR = 1000
+C = 6,000,000*log2(1+1000)
+C = 65,820,000
+
+
+__
+6)
+
+Shannon Theorem
+SNR = 10^(SNR_dB/10) = 10^(20/10)
+SNR = 100
+C = 3000*log2(1+100)
+C = 19974.6344483
+
+
+__
+7)
+
+Shannon Theorem
+1540000 = 50000*log2(1+SNR)
+log2(1+SNR) = 1540000/50000
+1 + SNR = 2^(30.8)
+SNR = 2^(30.8) - 1
+SNR ≈ 1117236206 - 1
+SNR ≈ 1117236205
+
+
+__
+8)
+
+SNR = 10^(SNR_dB/10) = 10^(30/10)
+SNR = 1000
+C = 4000*log2(1+1000)
+C = 39868.9050353
+
+R: Não é possível pois 100 000 é muito maior que o resultado que é aprocimadamente 40 000
+
+
+__
+9)
+
+480 pixels * 640 pixels * 24 bits = 7,372,800 bits (or 7.3728 megabits)
+7,372,800 bits per image * 60 images per second = 442,368,000 bits per second
+
+SNR_linear = 10^(SNR_dB / 10) = 10^(40 / 10) = 10000
+442,368,000 bps = B * log2(1 + 10000)
+
+B = 442,368,000 bps / log2(10001)
+B ≈ 442,368,000 bps / 13.29
+B ≈ 33,278,591 Hz

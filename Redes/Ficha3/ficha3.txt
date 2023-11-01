@@ -1,0 +1,142 @@
+Redes ficha 3
+1.
+Um sinal analógico é um sinal contínuo, enquanto os sinais digitais são sinais separados no tempo.
+O sinal analógico é representado por ondas sinusoidais, enquanto os sinais digitais são representados por ondas quadradas.
+O sinal analógico utiliza uma gama contínua de valores que o ajudam a representar a informação; por outro lado, o sinal digital utiliza 0 e 1 discretos para representar a informação.
+Comparando sinais digitais e analógicos, a largura de banda do sinal analógico é baixa, enquanto a largura de banda do sinal digital é alta.
+2.
+Amplitude, frequência e fase.
+3.
+Pela formula sao inversamente proporcionais.(F=1/T);
+4.
+A largura de banda é a diferença entre a frequência mais baixa e a mais alta do espetro.
+5.
+Em termos de sinal analógico, a largura de banda do canal é a gama de frequências que o canal pode transportar. Em termos de sinal digital, a largura de banda do canal é a taxa de bits máxima suportada pelo canal.
+6.
+A capacidade do canal é determinada pela largura de banda do canal, pela relação sinal/ruído(SNR) e pela taxa de erro.
+7.
+F=1/(2ms)
+F=1/0.002s
+F=500Hz
+8.
+As interferências são evitadas na multiplexagem por divisão de frequências através da utilização de bandas de guarda, que são partes não utilizadas do espetro de frequências entre os dois canais.
+que são porções não utilizadas do espetro de frequências entre
+subcanais.
+9.
+v=f*λ
+Wavelength:
+C:
+λ=330/264=1.25 metros
+D:
+λ=330/297=1.11 metros
+E:
+λ=330/330=1 metros
+F:
+λ=330/352=0.94 metros
+G:
+λ=330/396=0.8333 metros
+A:
+λ=330/440=0.75 metros
+B:
+λ=330/495=1.5 metros
+C:
+λ=330/528=0.625 metros
+
+Frequencia relativa:
+
+C:
+264 Hz /264 Hz = 1
+D:
+297 Hz /264 Hz = 1,125
+E:
+330 Hz /264 Hz = 1.25
+F:
+352 Hz /264 Hz = 1,3333
+G:
+396 Hz /264 Hz = 1,5
+A:
+440 Hz /264 Hz = 1,6666
+B:
+495 Hz /264 Hz = 1,875
+C:
+528 Hz /264 Hz = 1,992
+
+10.
+
+
+
+
+11.
+F = c / λ
+1cm:
+Fmin = 3*10^8/0.01
+Fmin =3*10^10
+
+5m:
+Fmax = 3*10^8/5
+Fmax =6*10^7
+
+12.
+t=sin(2πft+Θ)
+t=2sin(2π2t+π)
+r=2sin(4πt+π)
+
+A é a amplitude da onda.
+f é a frequência da onda em Hertz (Hz).
+ϕ é o ângulo de fase em radianos.
+
+13.
+Os trabalhos de Nyquist e de Shannon estão relacionados na medida em que o teorema de Nyquist é um pré-requisito para a digitalização de sinais e o teorema da capacidade do canal de Shannon ajuda a determinar a taxa de dados máxima alcançável num canal, dada a sua largura de banda e a relação sinal-ruído.
+
+14.
+
+
+
+
+15.
+14000000=B * log2(1+127)
+14000000=B * 7
+B=14000000/7
+B=2000000 Hz
+
+16.
+A principal diferença entre o data rate e o modulation rate é que o data rate diz respeito ao conteúdo real da informação e ao número de bits transmitidos por segundo, enquanto o modulation rate diz respeito ao número de símbolos de modulação transmitidos por segundo. A taxa de modulação é normalmente inferior à taxa de dados, uma vez que cada símbolo pode representar vários bits. A relação entre o data rate e o modulation rate depende do esquema de modulação específico que está a ser utilizado.
+
+17.
+a)esta no paint
+b)
+FAZER MELHOR DEPOIS
+Symbols:  10   01   00   11   00   00   01   00   00   01   11   00   01
+Phases:   π    π/2  0    3π/2 0    0    π/2  0    0    π/2  3π/2 0    π/2
+
+18.
+
+
+
+
+19.
+É amplitude modulation porque o eixo do y nao é constante.
+Como tem dois pontos ao longo do eixo vertical (eixo y) com amplitudes diferentes (1 e 2), isto indica que o modem varia a amplitude do sinal da portadora para transmitir diferentes símbolos de dados, o que é uma caraterística da modulação de amplitude.
+
+20.
+Num diagrama de constelação em que todos os pontos se encontram num círculo centrado na origem, isso indica normalmente que está a ser utilizada modulação de fase. Isto é frequentemente referido como um esquema de modulação "PSK".
+Na modulação de fase, a informação é transmitida alterando a fase do sinal da portadora, mantendo a amplitude constante.
+
+21.
+shannon:
+SNRdB=10log10(SNR)
+30=10log10(SNR)
+3=log10(SNR)
+10^3=SNR
+SNR=1000
+C=B*log2(1+SNR)
+C=6000000*log2(1001)
+C=59.8 Mbps
+
+Rmax = Symbol Rate * bits per symbol
+Rmax= 4000baud * 8
+Rmax=32 kbps
+
+22.
+
+

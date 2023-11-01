@@ -1,0 +1,127 @@
+Redes ficha 1
+
+_
+2.
+c) Inicialmente nao obtive resposta pois tinha algumas linhas comentadas como o ip adress entre outras que faziam que não fosse possivel testar.
+e) O PC1 fez a conexão com o PC2 e mostra alguns dados dessa ligação como numero de bytes, ttl, tempo e o numero de sequencia.
+f) No wireshark foram feitas 3 layers de internet que sao a camada do ip, o protocolo do ip e a internet fisica.
+
+_
+3.
+ifconfig   é   usado  para  configurar  (e  posteriormente  manter)  as interfaces de rede. É usado durante o boot para  configurar  a  maioria delas  para  um  estado  usável.  Depois  disto,  é normalmente somente necessário durante depurações ou quando for necessária uma configuração fina do sistema.
+
+ping usa o datagrama ECHO_REQUEST obrigatório do protocolo ICMP para obter um ICMP ECHO_RESPONSE de um host ou gateway. Datagramas ECHO_REQUEST (“pings”) têm um cabeçalho IP e ICMP, seguido por um struct timeval e em seguida, um número arbitrário de bytes “pad” usados ​​para preencher o pacote.
+
+O resultado do traceroute mostra a lista de roteadores (e, possivelmente, outros dispositivos de rede) ao longo do caminho até o destino, junto com os tempos de ida e volta (latência) para cada um deles. Isso ajuda a diagnosticar problemas de latência ou identificar pontos de falha em uma conexão de rede
+
+Netstat mostra informações do subsistema de rede do Linux, você pode ver o estado das conexões de rede através  da  listagem  dos sockets  abertos.  Esta  é  a operação padrão: se você não especificar nenhuma família de endereços, os sockets ativos de todas  as  famílias de   endereços  configuradas  serão  mostrados.  Com  -e  você  obterá informações adicionais (userid). Com a chave -v você poderá fazer  com que  o  netstat reclame sobre famílias de endereços conhecidas que não sejam suportadas pelo kernel.
+
+
+O WHOIS é um protocolo de consulta e um sistema de banco de dados usado para obter informações sobre registros de domínio da Internet, como informações sobre o proprietário, contatos administrativos e técnicos, data de registro, data de vencimento, servidores de nomes (DNS) associados e outras informações relacionadas a um domínio específico
+
+Dig é uma ferramenta flexível para interrogar servidores de nomes DNS. Ele executa O DNS pesquisa e exibe as respostas retornadas do nome servidores que foram consultados. A maioria dos administradores de DNS usa dig para solucionar problemas solucionar problemas de DNS devido à sua flexibilidade, facilidade de uso e clareza da saída. Outras ferramentas de pesquisa tendem a ter menos funcionalidades do que cavar.
+
+O Nmap (Network Mapper) é uma ferramenta de código aberto usada para explorar e mapear redes, bem como para descobrir hosts e serviços em uma rede. É uma ferramenta popular para análise de segurança e diagnóstico de rede. O Nmap foi projetado para escanear redes e fornecer informações detalhadas sobre os dispositivos ativos nessa rede
+
+_
+4.
+ Pc1 MAC-> 5e:e7:33:74:88:62|| Pc2 MAC->9a:aa:85:36:7d:3a
+   Pc1 IP-> 10.0.0.1 || Pc2 IP-> 10.0.0.2
+	
+_
+5.
+pc3 MAC: 6a:10:47:08:52:6a IP:10.0.0.3
+pc4 MAC: 2e:51:3c:2b:a4:2c IP:10.0.0.4
+pc5 MAC: 3e:b4:1e:0c:dc:e6 IP:10.0.0.5
+
+_
+6.
+ICMP:
+O protocolo de mensagens de controle da internet (ICMP) é um protocolo da camada de rede usado por dispositivos de rede para diagnosticar problemas de comunicação de rede. O ICMP é usado principalmente para determinar se os dados estão chegando ou não ao destino pretendido em tempo hábil.
+ARP:
+O protocolo de resolução de endereço (ARP) é um protocolo ou procedimento que conecta um endereço de protocolo de internet (IP) em constante mudança a um endereço de máquina físico fixo, também conhecido como endereço de controle de acesso a mídia (MAC), em uma rede local (LAN). 
+
+_
+7.
+sudo dig +short www.geotraceroute.com
+ip: 104.21.51.253 , 172.67.192.133
+sudo dig +short www.geotraceroute.com
+
+_
+8.
+tokyo:
+PING 162.43.116.47 (162.43.116.47) 56(84) bytes of data.
+64 bytes from 162.43.116.47: icmp_seq=1 ttl=51 time=111 ms
+64 bytes from 162.43.116.47: icmp_seq=2 ttl=51 time=111 ms
+64 bytes from 162.43.116.47: icmp_seq=3 ttl=51 time=111 ms
+64 bytes from 162.43.116.47: icmp_seq=4 ttl=51 time=111 ms
+64 bytes from 162.43.116.47: icmp_seq=5 ttl=51 time=111 ms
+
+--- 162.43.116.47 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4005ms
+rtt min/avg/max/mdev = 111.167/111.234/111.340/0.426 ms
+
+US:
+
+PING 54.85.227.149 (54.85.227.149) 56(84) bytes of data.
+
+--- 54.85.227.149 ping statistics ---
+5 packets transmitted, 0 received, 100% packet loss, time 3999ms
+
+_
+9.
+Brodcast é um canal de comunicação apenas para todas as maquinas na network, nas networks cada host tem o seu endereço e a Point to Point é uma conexao entre dois hosts e para chegar ao seu destino pode ser preciso visitar uma ou mais maquinas intermediarias.
+
+_
+10.
+
+A comunicação unicast é um método de comunicação em redes no qual os dados são enviados de um único remetente para um destinatário específico. Estabelece uma conexão um-para-um entre o remetente e o receptor.
+A comunicação multicast é um método de comunicação em redes no qual os dados são enviados de um único remetente para múltiplos destinatários que pertencem a um grupo multicast específico.
+A comunicação broadcast é um método de comunicação em redes no qual os dados são enviados de um único remetente para todos os dispositivos na rede. Estabelece uma conexão um-para-todos.
+
+_
+11.
+A comunicação simplex é um tipo de comunicação unidirecional na qual os dados fluem em apenas uma direção, do remetente para o receptor. Em uma comunicação simplex, o receptor não pode responder diretamente ao remetente.
+A comunicação half-duplex é um tipo de comunicação bidirecional, mas não simultânea, na qual os dados podem fluir em ambas as direções, mas não ao mesmo tempo. Isso significa que, em um dado momento, a comunicação ocorre em apenas uma direção.
+A comunicação full-duplex é um tipo de comunicação bidirecional e simultânea na qual os dados podem fluir em ambas as direções ao mesmo tempo. Isso permite que os dispositivos transmitam e recebam dados simultaneamente.
+
+_
+12.
+PAN (Personal Area Network):
+
+Definição: Uma Rede de Área Pessoal (PAN) é uma rede de comunicação de curto alcance usada para conectar dispositivos próximos a um indivíduo, normalmente dentro de um alcance de alguns metros. PANs são projetadas para comunicação pessoal e podem ser estabelecidas usando tecnologias como Bluetooth, infravermelho (IR) ou conexões USB.
+LAN (Local Area Network):
+
+Definição: Uma Rede de Área Local (LAN) é uma rede de computadores que abrange uma área geográfica limitada, como uma residência, escritório ou campus. As LANs são usadas para conectar dispositivos próximos e facilitar a comunicação e o compartilhamento de recursos, como impressoras e servidores de arquivos, entre esses dispositivos.
+MAN (Metropolitan Area Network):
+
+Definição: Uma Rede de Área Metropolitana (MAN) é uma rede de comunicação que cobre uma área geográfica maior do que uma LAN, geralmente uma cidade ou área metropolitana. Elas são projetadas para interconectar várias LANs em uma área geográfica maior, permitindo a comunicação de dados em longas distâncias, geralmente usando fibra óptica ou outros meios de alta capacidade.
+WAN (Wide Area Network):
+
+Definição: Uma Rede de Área Ampla (WAN) é uma rede de computadores que abrange uma área geográfica muito extensa, como um país, continente ou até mesmo globalmente. As WANs são projetadas para conectar LANs e MANs distantes, possibilitando a comunicação entre dispositivos em locais geograficamente dispersos. Elas geralmente utilizam infraestruturas de telecomunicações, como linhas dedicadas, satélites ou conexões de internet de alta velocidade.
+
+_
+13.
+Independência de camada Cada camada deve encapsular seu procedimentos. Sua implementação não é visível do outro camadas apenas a interface de serviço (muito parecido com orientação a objetos línguas). 
+As camadas adjacentes comunicam-se através de uma interface.camada fornece serviços para a camada acima e usa serviços de a camada abaixo por meio de suas interfaces de serviço.
+Serviços de valor agregado – O serviço fornecido por uma camada ao o próximo acima melhora o serviço recebido da camada inferior.
+
+Serviço: é o conjunto de primitivas (operações) que uma camada fornece para a camada acima dela.
+Protocolo: é o conjunto de regras que regem o formato e o significado do unidades de dados trocadas pelas entidades pares dentro de uma camada.
+
+_
+14.
+A "camada encapsulada" se refere à parte dos dados que está contida dentro de uma estrutura de comunicação em um determinado nível do modelo OSI ou em uma arquitetura de rede, separada das informações de controle e encapsulamento associadas a cada camada específica.
+
+_
+15.
+Physical layer ->Bit
+Data link layer ->Frame
+Network layer ->Packet
+Transport layer ->Segment(TCP) or Datagram(UDP)
+Application layer ->Message,Data, or simply "Data"
+
+_
+16.
+a) Data link
+b) Network Layer

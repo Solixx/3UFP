@@ -1,0 +1,67 @@
+Teste Modelo: Representação Digital da Informação e Interatividade em Sistemas Multimídia
+
+Parte 1: Representação Digital da Informação
+
+O que é um bit?
+a) Um grupo de 8 bits.
+✔️ b) Um símbolo binário 0 ou 1.
+c) Uma taxa de amostragem.
+d) Um tipo de programa de computador.
+
+Qual é a principal razão pela qual o sistema binário é amplamente usado na representação digital?
+a) Porque é mais barato.
+b) Porque é mais rápido.
+✔️ c) Porque é simples e eficaz.
+d) Porque é compatível com a maioria dos dispositivos.
+
+O que é um Byte?
+a) Um símbolo binário 0 ou 1.
+✔️ b) Um grupo de 8 bits.
+c) Uma taxa de amostragem.
+d) Uma técnica de conversão A/D.
+
+Como os computadores armazenam dados e programas?
+a) Em formato analógico.
+b) Em formato de texto.
+✔️ c) Em formato binário.
+d) Em formato hexadecimal.
+
+Parte 2: Interatividade em Sistemas Multimídia
+
+Qual é a principal vantagem da interatividade em sistemas multimídia?
+a) Permite uma comunicação unidirecional.
+b) Facilita a manipulação de informação em formato analógico.
+✔️ c) Permite que os utilizadores controlem o conteúdo e o fluxo de informação.
+d) Reduz a capacidade de armazenamento necessária para dados digitais.
+
+O que é uma apresentação passiva em sistemas multimídia?
+a) Uma apresentação em que o utilizador pode controlar vários aspetos.
+✔️ b) Uma apresentação que segue um esquema predefinido sem interação do utilizador.
+c) Uma apresentação baseada em texto.
+d) Uma apresentação que utiliza interação através de conteúdos multimídia.
+
+O que é um sistema adaptativo?
+a) Um sistema que não responde às ações do utilizador.
+b) Um sistema que permite uma única forma de interação.
+✔️ c) Um sistema que analisa o input do utilizador e gera uma resposta adaptada.
+d) Um sistema de apresentação passiva.
+
+O que é um script na context de interatividade em sistemas multimídia?
+a) Um script é um formato de arquivo de imagem.
+✔️ b) Um script é um tipo de linguagem de programação.
+c) Um script é uma ferramenta usada apenas por desenvolvedores de jogos.
+d) Um script é uma apresentação interativa.
+
+Parte 3: Interatividade em Sistemas Multimídia
+
+O que significa Design da Interação (ID - Interaction Design)?
+a) A criação de conteúdo multimídia interativo.
+b) A análise de dados em sistemas multimídia.
+✔️ c) A conceção de elementos e processos da interface para uma interação eficaz e agradável.
+d) A implementação de linguagens de programação.
+
+O que é a interação através de conteúdos multimídia?
+a) Controlar a visualização de media.
+✔️ b) Inserir controlos nos conteúdos para interagir com dados ou processos computacionais.
+c) Assistir a apresentações passivas.
+d) Aplicar scripts aos conteúdos multimídia.

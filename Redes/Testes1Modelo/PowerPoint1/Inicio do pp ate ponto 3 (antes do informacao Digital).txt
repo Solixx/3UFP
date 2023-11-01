@@ -1,0 +1,47 @@
+Parte 1: Conceitos Básicos de Multimídia
+
+O que é multimídia?
+a) A combinação de informações visuais e auditivas apenas.
+✔️ b) A combinação, controlada por computador, de vários tipos de mídia, incluindo texto, gráficos, áudio, vídeo e animação.
+c) A distribuição de informações por meio de redes de comunicação de dados.
+d) A percepção de informações através de interações físicas.
+
+Qual dos seguintes não é um tipo de mídia dinâmica?
+✔️ a) Texto
+b) Vídeo
+c) Áudio
+d) Animação
+
+O que caracteriza um sistema multimídia?
+✔️ a) Combinação de vários tipos de mídia independentes entre si.
+b) Uso de somente mídia estática.
+c) Necessidade de controle manual, sem envolvimento de computadores.
+d) Apresentação de informações apenas em papel.
+
+Parte 2: Aplicações Multimídia
+
+Onde as tecnologias multimídia têm encontrado aplicação?
+a) Apenas na indústria de entretenimento.
+✔️ b) Em áreas como educação, comércio, indústria e serviços.
+c) Somente nas redes de comunicação.
+d) Exclusivamente em dispositivos móveis.
+
+O que é uma aplicação multimídia?
+a) Um sistema que combina vários tipos de mídia sem a necessidade de um computador.
+✔️ b) Um programa que controla a apresentação de informações usando vários tipos de mídia.
+c) Um dispositivo de armazenamento de mídia digital.
+d) Uma rede de comunicação de dados.
+
+Parte 3: Tecnologias Multimídia
+
+Qual é o nível mais alto de abstração em relação às tecnologias multimídia?
+✔️ a) Tecnologias de base.
+b) Tecnologias de criação de conteúdo.
+c) Tecnologias de interface do usuário.
+d) Tecnologias de armazenamento de mídia.
+
+O que são sistemas multimodais?
+a) Sistemas que apenas apresentam informações ao usuário.
+✔️ b) Sistemas que estimulam vários sentidos e permitem a interação bidirecional.
+c) Sistemas que não usam computadores.
+d) Sistemas que não usam tipos de mídia dinâmicos.

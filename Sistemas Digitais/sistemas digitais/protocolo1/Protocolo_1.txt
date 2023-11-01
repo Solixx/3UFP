@@ -1,0 +1,15 @@
+Protocolo 1 ->
+	Experiencia 1:
+		Voltagem inicial: 5.07V
+		resistencia de 330 ohm = 326 ohm
+		tensao do led = 1,89V
+		tensao da resistencia = 3,08V
+	Experiencia 2:
+		Voltagem inicial: 5.07V
+		PINo 1:
+		Sem dedo: 3.83V
+		Com dedo: 0V
+		PINO 2:
+		Sem dedo: 0.07V
+		Com dedo: 4.03V
+		

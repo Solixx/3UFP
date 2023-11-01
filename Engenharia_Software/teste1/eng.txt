@@ -1,0 +1,180 @@
+O QUE É SOFTWARE?
+instrucoes (programa de compuatdor que quando executado fornece funcionalidades, funcoes e desempenho desejado)
+estrutura de dados (permite ao programa manipular informacao de forma adequada)
+decumentacao (descreve as operacoes e utilizacao do programa)
+
+O EFEITO DAS MUDANÇAS NO SOFTWARE - TAXAS DE ERRO
+o software esta a deteriorar-se devido ás mudanças
+
+LEGACY SOFTWARE
+antigo (criado à decadas e recebe mudanças continuamente)
+arriscado (as organizacoes acreditam ser arriscado de evoluir)
+despendioso (as organizacoes acreditam ser caro de manter)
+
+O software deve:
+servir as necessidades
+implementar novos requisitos
+ser evolutivo
+ser interoperavel
+
+ENGENHARIA DE SOFTWARE
+perceber o problema
+design torna-se algo fundamental
+software de alta qualidade
+o software deve ser de facil manutencao
+
+Camadas:
+ferramentas
+metodos
+processos
+foco na qualidade
+
+O PROCESSO DE ENGENHARIA DE SOFTWARE
+comunicacao planeamento
+modelacao
+desenvolvimento
+entrega
+
+A ESSÊNCIA DA PRÁTICA
+perceber o problema
+planear a solucao
+executar o plano
+analisar o resultado
+
+PROJETOS DE SOFTWARE
+corrigir os problemas da aplcicao
+adaptar o sistema legacy a um ambiente de mudança
+exceder as funcionalidades do programa
+criar novos produtos, serviçox ou sistemas
+
+O QUE É UM PROJETO?
+esforço temporario
+inicio e fim bem definidos
+termina quando:
+objetivo comprido (sucesso)
+objetivo nao comprido (insucesso)
+software já n é necessário (insucesso)
+
+CICLO DE VIDA DE UM PROJETO
+inicializacao
+planeamento
+execucao
+encerramneto
+
+DEFINIÇÃO DE ATIVIDADES
+indentificar as atividades
+identificar os resposaveis por cada atividade
+prever custo
+
+PROCESSO DE DESENVOLVIMENTO DE SOFTWARE
+criterios que explicam os objetivos das atividades
+pontos de decisao no planeamento
+pontos de sincronizacao no trabalho da equipa
+
+MODELO UNIFICADO
+gerir requisitos
+verificar qualidade do sistema
+
+O QUE É AGILIDADE?
+resposta efetiva
+comunicacao efetiva
+organizar equipa
+
+PROCESSO AGILE
+incremento do software
+adaptativo a mudanças
+
+GESTÃO ÁGIL DE PROJETOS
+
+
+MÉTODOS ÁGEIS
+adaptativos
+incrementai
+iterativos
+
+CASCATA VS AGILE
+solucao completa
+utilizador faz parte do projeto do inicio ao fim
+
+solucao parcial
+utilizador vai fazendo parte do projeto
+
+PORQUE É QUE O XP FUNCIONA?
+leve
+codigo é a decomentacao
+
+Métodos de Organização de Engenharia Software
+scrum (reunioes diaria de 15mins)
+kanban (todo, doing, done)
+scrumban (hibrido entre scrum e kanban)
+lean (verifica o que é valor para o cliente e decomenta o processo do inicio ao fim)
+
+AJUSTAR UM PROCESSO A UM PROJETO
+tecnologias a usar
+
+PONTOS DE CONTROLO
+um encontro da equipa para falar sobre o futuro do projeto e as proximas atividades ou atividades atuais
+
+O que é UML:
+standard aberto
+suporta todo ociclo de vida de um sistema modelacao
+
+O que não é UML:
+não é metodologia
+não é uma kinguagem de programacao
+
+PORQUÊ USAR UML?
+facilita a compreensao do problema
+é uma linguagem universal
+
+DIAGRAMA DE CASOS DE USO
+captura os requisitos funcionais
+especifica o contexto do sistema
+
+DIAGRAMA DE CLASSES
+normalizar e monitorizar o conseito do sistema
+especificar colaboracoes
+
+DIAGRAMA DE SEQUENCIA
+captura requisitos dinamicos
+ilustra cenarios tipicos
+
+PORQUE SÃO OS CASOS DE USO IMPORTANTES NO PROCESSO DE DESENVOLVIMENTO DE SOFTWARE?
+guiam o planeamento
+guiam o desenho do sistema
+guiam os teste do sistema
+
+ESTRUTURAÇÃO DOS DIAGRAMAS DE CASOS DE USO
+extend (nao obrigatorio)
+include (obrigatorio)
+generalizacao de casos de uso
+generalizacao de atores
+
+BOAS PRÁTICAS NA DEFINIÇÃO DE CASOS DE USO
+identificar os atores
+identificar os casos de uso
+
+Porque é a Arquitetura de Software importante?
+comunicacao entre skateholders
+decisoes de design oportunas
+abstracao de sistema
+
+Princípios arquiteturais:
+separacao
+responsabilidade
+pouco conhecimento
+
+Vistas arquiteturais:
+casos de uso
+logica
+processo
+
+Vantagens da Arquitetura por Camadas / Interesses:
+facilita o desenvolvimento
+facilita a manutencao
+facilita a reutilizacao
+
+Desvantagens da Arquitetura por Camadas / Interesses:
+nao se aplica em todas as situacoes
+diminuicao do desempenho
+

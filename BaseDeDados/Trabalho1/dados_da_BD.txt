@@ -1,0 +1,73 @@
+utilizadores
+ID(pk)
+nome
+tipo(0 - nao logado , 1 - logado , 2 - premium, 3 - admin)
+
+
+log
+ID(pk)
+utilizadorLivros(fk)
+data
+
+
+utilizadorLivros
+ID(pk)
+utilizador(fk)
+livro(fk)
+tipo(lido ou em exploraçao)
+favorito(boolean)
+percentagem trigger(se o tipo do livro for lido este campo é 100%)
+
+
+livro
+ID(pk)
+tag(fk)
+atividades(fk)
+titulo
+fotografia de capa
+descriçao
+faixa etaria
+paginas
+audio
+video
+tipo(0 - oculto , 1 - disponivel e livre, 2 - disponivel premium)
+
+
+
+Autor
+ID(pk)
+nome
+nacionalidade
+descriçao
+fotografia
+
+
+AutorLivro
+ID(pk)
+autorID(fk)
+livroID(fk)
+
+Atividades
+ID(pk)
+tipo
+
+
+Categoria
+ID(pk)
+nome
+
+
+Comentario
+ID(pk)
+utilizador(fk)
+livro(fk)
+data
+texto
+
+
+rating
+ID(pk)
+livro(fk)
+utilizador(fk)
+valor
+(possivel trigger para permitir atribuir rating quando acabar de ler o livro)

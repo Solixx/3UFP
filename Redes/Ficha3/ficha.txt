@@ -1,0 +1,146 @@
+Ficha3 - Redes
+
+1) 
+Analog:	Tem variação continua na amplitude e no tempo, são mais precisos, são menos imunes a ruido.
+Digital: Apenas 0 e 1 com sequênci discreta de valores quantificados, são menos precisos, são mais imunes a ruido.
+
+2)
+- Um sinal periodico repetece num certo numero de intervalos de tempo.
+- A frequência fundamental representa o recíproco do período e indica quantos ciclos do sinal ocorrem por unidade de tempo.
+- Harmônicos são componentes senoidais (ondas senoidais e cosseno) com frequências que são múltiplos inteiros da frequência fundamental. Esses componentes harmônicos definem coletivamente a forma do sinal. A presença e amplitudes desses harmônicos contribuem para o timbre e a forma do sinal.
+
+3)
+A relação é que o periodo é a duração do ciclo para cada frequencia.
+Com a frequencia de um ciclo periodico conseguimos calcular o periodo (T = 1/F)
+Com o periodo de um ciclo periodico conseguimos calcular a frequencia (F = 1/T)
+
+4)
+Signal Spectrum é o numero de frequencias de faixa enquanto o signal bandwidth é o tamanho de cada faixa quanto maior mais informação podem ser transmitidos.
+Largura do espectro (W=fmax-fmin)
+
+5)
+Signal Bandwidth:
+	É a faixa de frequências em que um sinal de comunicação carrega informações. 		Quanto mais ampla for essa faixa, mais dados podem ser transmitidos.
+
+Channel Bandwidth:
+	A faixa de frequências transmitidas sem serem fortemente atenuadas.
+	Quanto maior fir a bandwidth, mais dados podem ser transmitidos em um curtoo 	espaço de tempo, tornando a comunicação mais rápida e eficiente.
+
+6)
+Error rate
+Number of levels in digital signal
+Bandwidth:	refere-se à faixa de frequências na qual ela pode transmitir sinais;
+Signal-to-Noise Ratio:	É uma medida da qualidade do sinal em comparação com o nível de 	ruído de fundo ou interferência presente no canal;
+
+7)
+F = 1/T
+F = 1/0.002s
+F = 500hz
+
+8)
+As interferências são evitadas pela utilização de faixas de guarda para separar os canais. As bandas de guarda são formadas a partir de porções não utilizadas do espectro.
+
+9)
+
+Wavelength:
+λ = v / f
+
+C:	λ = 330m/s / 264Hz ≈ 1.25m
+D:	λ = 330m/s / 297Hz ≈ 1.11m
+E:	λ = 330m/s / 330Hz = 1m
+F:	λ = 330m/s / 352Hz ≈ 0.94m
+G:	λ = 330m/s / 396Hz ≈ 0.83m
+A:	λ = 330m/s / 440Hz ≈ 0.75m
+B:	λ = 330m/s / 495Hz ≈ 0.67m
+C:	λ = 330m/s / 528Hz ≈ 0.63m
+
+Frequencia relativa:
+frequencia relativa = f/totalFrequencias
+3102
+C:	λ = 264Hz / 3102Hz ≈ 0,09%
+D:	λ = 297Hz / 3102Hz ≈ 0.1%
+E:	λ = 330Hz / 3102Hz = 0.11%
+F:	λ = 352Hz / 3102Hz ≈ 0.11%
+G:	λ = 396Hz / 3102Hz ≈ 0.13%
+A:	λ = 440Hz / 3102Hz ≈ 0.14%
+B:	λ = 495Hz / 3102Hz ≈ 0.16%
+C:	λ = 528Hz / 3102Hz ≈ 0.17%
+
+
+10)
+
+c (velocidade da luz) = 3*10^8m/s
+Δf = c * Δλ / λ^2
+
+λ = 1 micron
+λ = 1*10^-6m
+
+Δλ = 0.1
+Δλ = 0.1 x 10^-6m
+
+Δf = (3 x 10^8 m/s) * (0.1 x 10^-6 m) / (1 x 10^-6 m)^2
+Δf = (3 x 10^8 m/s) * (0.1 x 10^-6 m) / (1 x 10^-12 m^2)
+Δf = (3 x 10^8 m/s) * 0.1 x 10^6 / 1 x 10^-12
+Δf = 3 x 10^2 x 10^6 / 1 x 10^-12
+Δf = 3 x 10^8 Hz
+
+(Outro exemplo)
+
+λ = 3 micron
+λ = 3*10^-6m
+
+Δλ = 0.5
+Δλ = 0.5 x 10^-6m
+
+Δf = (3 x 10^8 m/s) * (0.5 x 10^-6 m) / (3 x 10^-6 m)^2
+Δf = (1.5 x 10^2 m/s) / (9 x 10^-12 m^2)
+Δf = 1.67 x 10^13 Hz
+
+11)
+
+λ = c / f
+f = c / λ
+
+1cm = 0.01m
+5m = 5m
+
+f_min = c / λ_max
+f_max = c / λ_min
+
+f_min = (3 x 10^8m/s) / 5m
+f_max = (3 x 10^8m/s) / 0.01m
+
+f_min ≈ 60MHz (megahertz)
+f_max ≈ 300,000MHz
+f_max ≈ 300GHz (gigahertz)
+
+12)
+
+A = 2 (amplitude de onda neste caso é de -2 a 2)
+f = 2 (vezes que a onda se repete)
+ϕ = PI (se for pra baixo é PI se subir é 0 vejo do ponto (0,0) depois se ela dexer ou se sobe)
+
+13)
+
+O Teorema de Nyquist define a taxa mínima de amostragem necessária para reconstruir um sinal sem perda de informação, enquanto o Teorema de Shannon define a taxa máxima de transmissão de informações em um canal sujeito ao ruído.
+
+Teorema de Nyquis
+- O sinal é distorcido pelo canal gerando Interferência Intersimbólica (ISI)
+- Segundo Nyquist é possível recuperar a informação do sinal, reduzindo o ISI nos momentos de amostragem
+
+O Teorema de Shannon
+Shannon estendeu o trabalho de Nyquist considerando o ruído térmico
+O Teorema de Shannon nos diz que, independentemente de quão complexo seja o sistema de comunicação, existe uma "largura de banda" máxima para esse canal, que representa a taxa máxima na qual informações podem ser transmitidas de forma confiável. Esse limite é influenciado pelo nível de ruído no canal.
+O teorema ajuda-nos a entender quão eficazmente podemos transmitir informações em um ambiente com ruído.
+
+21)
+B = 6MHz = 6000000Hz
+SNRdB = 30
+SNRdB = 10log10(SNR)
+30 = 10^(SNR/10)
+SNR = 10^(30/10)
+SNR = 1000
+
+C = 6000000*log2(1+1000)
+C = 59803357.553bps
+C = 59.8Mbps

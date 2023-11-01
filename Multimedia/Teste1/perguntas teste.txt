@@ -1,0 +1,9 @@
+Teórica
+
+1) Explica o conceito de displayList
+2) Diferenças entre gráficos vetoriais e imagens bitmap
+3) Qual a utilizadade da void reshape()
+
+Prática
+
+2 quadrados, 1 triangulo e 1 hexaguno (1 com cores de linhas diferentes)
