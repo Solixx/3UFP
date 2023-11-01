@@ -9,16 +9,16 @@ class routerController extends Controller
 {
     public function index()
     {
-        return 'welcome';
-    }
-
-    public function hello()
-    {
-        return 'Hello';
+        return view('index');
     }
 
     public function about()
     {
-        return 'About';
+        return view('about');
+    }
+
+    public function hello()
+    {
+        return "hello - controller";
     }
 }
