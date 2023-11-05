@@ -1,0 +1,7 @@
+Condutor		-	Entrar
+Condutor		-	Sair
+Condutor		-	Metodo Pagamento
+Condutor		-	Tirar Ticket
+Condutor		-	Via Verde
+Condutor		-	Vagas Disponiveis
+Sistema Pagamento	-	Metodo Pagamento
