@@ -1,24 +1,78 @@
-galeria de imagens,
-comentários,
-reviews/pontuações, 
-pesquisas por tópico, 
-compras de experiências,´
-produtos,
-autenticação,
-favoritos,
-utilizadores,
-cancelamento e reservas,
-fatura,
-categoria,
-marcas,
-newsletter,
-pesquisas/filtros,
-fornecedores,
-encomendas,
-reclamações,
-Suporte,
-carrinho,
-historico,
-stock,
-devoluções,
-logs,
+Utilizadores:
+	Criar conta
+	Login
+	favoritos (produtos)
+	cargo (adiministrador, utilizador, premium, etc...)
+	historico (compras, encomendas, etc...)
+	reclamações
+	lista de utilizadores
+
+Logs:
+	Ver informacoes da loja (administrador)
+
+Produtos:
+	Add Produto
+	Editar Produto
+	Desativar Produto
+	Galeria de imagens
+	stock
+	lista de produtos
+
+Categorias:
+	Add categorias
+	Editar Categoria
+	Desativar categoria
+	lista de categorias
+
+Comentarios:
+	Add comentario
+	Ediatr Comentario
+	desativar comentario
+	lista de comentarios
+
+Reviwes/Pontuação
+	Add reviwes/pontuacoes
+	Editar reviwes/pontuacoes
+	Desativar reviwes/pontuacoes
+	media de pontuação
+
+Pesquisas:
+	Pesquisa por tópicos
+	Pesquisa por filtros
+
+Carrinho:
+	Adicionar Produto
+	Remover Produto	
+	lista de produtos do carrinho
+
+Compras:
+	Encomendar (produtos do carrinho)
+	Cancelar compra
+	compras de experiências,
+	reservar produto,
+	fatura
+	lista de compras
+	devoluções
+	
+Encomenda:
+	Lista de encomendas
+	Estado da encomenda (entregue, por entregar, iniciada, etc...)
+	cancelar encomenda
+
+Marcas:
+	add marcas
+	editar marcas
+	desativar marcas
+	Lista de marcas
+
+Suporte:
+	contacto por email
+
+newsletter:
+	envia emails com informações
+
+Fornecedores:
+	adicionar fornecedor
+	editar fornecedor
+	desativar fornecedor
+	lista de fornecedores

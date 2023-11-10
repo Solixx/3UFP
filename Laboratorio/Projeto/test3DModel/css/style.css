@@ -1,0 +1,75 @@
+body {
+    margin-top: 70px !important;
+    margin-right: 50px !important;
+    margin-bottom: 70px !important;
+    margin-left: 50px !important;
+    font-family: "Montserrat", sans-serif;
+    background-color: #111;
+  }
+
+  .circle {
+    width: 500px;
+    height: 500px;
+    border: 25px solid #FFFFFF; /* Define uma linha de contorno ao redor do círculo */
+    border-radius: 50%; /* Torna o elemento um círculo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(1.5px);
+  }
+
+  .circle::before,
+    .circle::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .circle::before {
+        box-shadow: 0 0 25px 25px #F1F5FE; /* Brilho para fora */
+      }
+  
+      .circle::after {
+        box-shadow: 0 0 25px 5px #F1F5FE inset; /* Brilho para dentro */
+      }
+  
+  header {
+    margin-top: 3em;
+    text-align: center;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+  
+  #container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img::before,
+  img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
