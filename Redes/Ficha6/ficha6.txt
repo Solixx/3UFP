@@ -1,0 +1,165 @@
+ficha 6:
+task 5:
+1:
+2:o enable serve para entrar no utilizador maximo
+3:serve para ver como a cmd reage ao erro e mostra onde ele existe
+4:mostra a utilidade das setas e depois entramos no modo configure
+5:o comando exit serve para voltar 
+6:o comando '?' serve para mostrar o que cada comando faz
+7:com o spacebar é possivel ver mais uma pagina de output de comandos 
+8:ao usar o comando exit saimos do modo privelegiado
+9:após usar o exit é necessario clicar no enter para que seja visivel o Router>
+10:podemos perceber que o comando 'e' nao existe dai ter aparecido o erro, já p comando 'en' o programa ja associa a enable entrando assim no utilizador maximo.
+11:o tab serve para completar comandos.
+12:o comando nao é reconhecido no exec mode
+
+task 6:
+1:
+
+2:o enable serve para entrar no utilizador maximo
+3:entra no modo config
+4:serve para entrar dentro do R1
+5:
+Uma vez que num ambiente de laboratório, na maioria das vezes, não temos um servidor DNS, desactivamos a pesquisa de domínio. Isto pode ser útil em laboratórios para verificar a conetividade ou quando se pretende ligar facilmente a dispositivos a partir de um único ponto.
+
+A desativação do DNS num ambiente de produção não é geralmente aconselhável, a menos que exista uma razão específica e bem compreendida para o fazer, e que existam medidas alternativas adequadas para lidar com as funções necessárias que o DNS fornece. É importante planear e comunicar cuidadosamente quaisquer alterações às configurações de DNS num ambiente de produção para evitar perturbações generalizadas.
+
+6:enable secret class, faz com que quando seja usado o comando enable peça a password que neste caso seria class.
+7:no enable secret permite tirar a obrigatoriadade de usar password
+8:O banner MOTD é exibido durante o processo de login, fornece informações importantes ou avisos aos utilizadores antes que precisem inserir suas credenciais de login. Depois do login, a mensagem não é exibida novamente até a próxima sessão de login.
+
+9:dentro do modo de configuração é adicionada a password cisco
+10:coloca a password cisco para os terminais virtuais
+11:colocamos o ip adress na interface do router e ativamos o ip para a porta 0
+12:este comando ativa a visibilidade da descricao da interface "R1 LAN"
+13:colocamos o ip adress na interface do router e ativamos o ip para a porta 1
+14:este comando ativa a visibilidade da descricao da interface "Link to R2"
+15:o comando end sai diretamente para o modo priveligiado
+16:guarda a configuração do R1
+
+task7:
+1:Repetir os passos do R1 para o R2
+2:colocamos o ip adress na interface do router e ativamos o ip para a porta 1
+3:este comando ativa a visibilidade da descricao da interface "Link to R1"
+4:colocamos o ip adress na interface do router e ativamos o ip para a porta 0 
+5:este comando ativa a visibilidade da descricao da interface "R2 LAN"
+6:o comando end sai diretamente para o modo priveligiado
+7:guarda a configuração do R2
+
+task8:
+1:	address 192.168.1.10/24
+	netmask 255.255.255.0
+	gateway 192.168.1.1
+2:
+	address 192.168.3.10/24
+	netmask 255.255.255.0
+	gateway 192.168.3.1
+task9:
+1:mostra as configurações
+2:mostra as configurações da startup
+3:mostra as interfacesna porta 0/0
+4:mostra a informação atual do software instalado
+5:mostra o sumario das informações de cada interface
+
+task10:
+1:
+ping 191.168.1.1 ->pc router
+no shutdown para ativar as entradas(porque usamos outro switch)
+end
+wr(guarda o ip)
+
+2:
+ping 192.168.1.10 ->router pc
+no shutdown para ativar as entradas(porque usamos outro switch)
+end
+wr(guarda o ip)
+
+3:o comando ping pede um ip e o numero de bits que pretendem ser enviados no caso foram enviados 10.
+Success rate is 100 percent (10/10), round-trip min/avg/max = 8/221/520 ms
+
+4:os resultados foram de acordo com o que era suposto
+
+5:ping 192.168.1.1 -c 10 envia 10 pings do router para o pc
+
+task11:
+1:mostra os saltos que o trafego vai dar ate chegar ao destino apartir do router para o pc
+2:faz o mesmo que o step 1 mas apartir do pc para o router
+task12:
+1:
+ve as configuracoes do router
+2:copiamos o codigo do terminal
+3:no caso vai ser guardado neste bloco de notas
+
+4:
+
+
+R1#show running-config
+Building configuration...
+
+Current configuration : 746 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname R1
+enable secret password
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+!
+!
+ip cef
+no ip domain lookup
+!
+!
+!         
+!
+!
+ip tcp synwait-time 5
+!
+!
+interface FastEthernet0/0
+ ip address 192.168.1.1 255.255.255.0
+ no shutdown
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ no shutdown
+ duplex auto
+ speed auto
+!
+no ip http server
+!
+ip forward-protocol nd
+!
+!
+no cdp log mismatch duplex
+!         
+control-plane
+!
+!
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ login
+!
+!
+end
+
+5:
+guardamos o ficheiro e foram feitas as alterções necessarias no ponto 4.
