@@ -1,0 +1,85 @@
+I
+
+1-V
+2-F porque depende das caracteristicas fisica(tamanho do cabo, ou tipo) CONFIRMAR C/STOR
+3-V CONFIRMAR C/STOR
+4-V
+5-V
+6-F CONFIRMAR C/STOR
+7-F
+
+II
+
+1.
+PREAMBLE- O quadro Ethernet começa com um preâmbulo de 7 bytes. Trata-se de um padrão de 0's e 1's alternativos que indica o início da estrutura e permite que o emissor e o recetor estabeleçam a sincronização de bits. Inicialmente, o PRE (PREAMBLE ) foi introduzido para permitir a perda de alguns bits devido a atrasos de sinal. Mas a atual Ethernet de alta velocidade não precisa de preâmbulo para proteger os bits da estrutura. O PRE (PREAMBLE ) indica ao recetor que o quadro está a chegar e permite que o recetor se fixe no fluxo de dados antes do início do quadro propriamente dito.
+
+Start of frame delimiter (SFD) - Este é um campo de 1 byte que está sempre definido como 10101011. O SFD indica que os próximos bits estão a iniciar o quadro, que é o endereço de destino. Por vezes, o SFD é considerado parte do PRE, razão pela qual o preâmbulo é descrito como 8 bytes em muitos sítios. O SFD avisa a estação ou estações que esta é a última oportunidade de sincronização.
+
+Destination Address - Este é um campo de 6 bytes que contém o endereço MAC da máquina para a qual os dados são destinados.
+
+Source Address - Este é um campo de 6 bytes que contém o endereço MAC da máquina de origem. Como o Source Address é sempre um endereço individual (Unicast), o bit menos significativo do primeiro byte é sempre 0.
+
+Length - O Length é um campo de 2 bytes, que indica o comprimento de toda a estrutura Ethernet. Este campo de 16 bits pode conter um valor de comprimento entre 0 e 65534, mas o comprimento não pode ser superior a 1500 Bytes devido a algumas limitações próprias da Ethernet.
+
+Data - Este é o local onde são inseridos os dados efectivos, também conhecidos como carga útil. Tanto o cabeçalho IP como os dados serão inseridos aqui se o Protocolo Internet for utilizado através da Ethernet. O comprimento máximo dos dados pode ser de 1500 bytes. No caso de o comprimento dos dados ser inferior ao comprimento mínimo, ou seja, 46 bytes, são adicionados 0's de enchimento para atingir o comprimento mínimo possível.
+
+Pad-
+
+FCS-
+
+2-
+Ao migrar de Ethernet a 10 Mbps para Ethernet a 100 Mbps, a compatibilidade com o formato de frame existente foi mantida reduzindo o tempo de transmissão de framede 51,2 microssegundos para 5,12 microssegundos. Isso permitiu preservar o tamanho de frame e suportar a maior taxa de transferência de dados, garantindo a continuidade do funcionamento do CSMA/CD.
+
+3-
+A regra 5-4-3-2-1 na Ethernet legada refere-se a restrições na disposição de repetidores em uma rede, com no máximo 5 segmentos de cabo, 4 repetidores, 3 segmentos ativos, 2 repetidores em cascata e 1 segmento reservado para colisões. 
+
+4-
+Carrier extension:
+Garantir ocupação média durante o horário do slot aumentando artificialmente a
+tamanho do quadro (se for menor que 4096 bits)
+Frame bursting:
+Vários quadros transmitidos no mesmo tempo de acesso ao meio
+
+5-//CONFIRMAR COM STOR, E ONDE SABER AS FORMULAS
+a)
+T=Total latency + Max Transmition Time
+T=180us+45us
+T=225us
+b)
+Neste cenário, cada estação adiciona 5 μs à latência total do anel. Se houver 36 estações, a latência total
+5us*36=180us
+c)
+R=1/Time Interval
+R=1/255us
+R=4.44Mbps
+d)
+R=1/Largest Time Interval
+R=1/180us
+R=5.56Mbps
+
+6-
+Feito no paint
+
+7-
+
+8-
+a)montagem feita
+b)nao foi possivel porque as portas GI ainda nao foram configuradas no switch
+c)É possivel dar ping entre pc1 e sw porque a vlan1 ja esta configurada 
+d)
+show mac address-table -> A tabela mostra a vlan a que esta conectada o seu mac address e o porta GI conectada.
+e)
+pc1 e pc2:
+ifconfig eth0
+ifconfig eth0 hw ether CC:05:02:19:00:00
+ifconfig eth0
+f)nao mostrou nenhum mac address
+g)
+pc1->sw = 1    cc05.0219.0000    DYNAMIC     Gi0/0
+pc2->sw = 1    cc05.0219.0000    DYNAMIC     Gi0/1
+É mostrado o mac address que esta a dar ping e a porta Gi a que esta conectado.
+h)O pedido é feito mas nao chega a respota 
+i)O que esta fora de comum é que aparece umas Spanning-tree Protocol no meio dos pings
+
+
+

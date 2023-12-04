@@ -1,0 +1,166 @@
+1.
+1a tentativa:tem 2 slots entao (1/2)^2 = 1/4
+2a tentativa:tem 4 slots entao (1/4)^2 = 1/16
+3a tentativa:tem 8 slots entao (1/8)^2 = 1/64
+
+2.
+a)
+Ring Size=Number of Stations×Propagation Delay 
+Ring Size=32*(10/2)
+Ring Size=160us
+
+b)
+Efficiency=1/(1+Token Rotation Time/Transmission Time)
+=1/(1+160/300)
+=0.652Mbit/s
+
+c)
+Rmax= 1/160 = 0.00625 μs
+
+Rmin= 1/2-160 = -0.00633 μs
+​
+d)
+O protocolo MAC Token Passing (Token de Controlo) tem geralmente um desempenho superior ao do CSMA/CD em condições de carga pesada devido ao seu acesso determinístico e ao facto de evitar colisões. No entanto, o desempenho específico pode depender das características da rede e das implementações dos protocolos. Em condições de baixa carga, ambos os protocolos podem funcionar adequadamente, mas as vantagens da passagem de token podem ser menos evidentes.
+
+4.
+switch:
+enable
+config terminal
+interface vlan1
+ip address 10.0.0.254 255.255.255.0
+no shutdown
+exit
+write memory
+
+hub:
+enable
+config terminal
+interface vlan1
+ip address 10.0.1.254 255.255.255.0
+no shutdown
+exit
+write memory
+
+5.
+a)hostname SW
+b)existem 16 interfaces gigabit-ethernet
+c)
+i.Roteamento entre VLANs: Os endereços IP nas VLANs permitem a comunicação inter-VLAN, permitindo que diferentes VLANs comuniquem entre si. Isso é crucial para a troca eficiente de dados entre segmentos de rede distintos.
+ii.
+Vlan1 is up, line protocol is up
+  Internet address is 10.0.0.254/24
+  Broadcast address is 255.255.255.255
+  Address determined by setup command
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Probe proxy name replies are disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  IPv4 WCCP Redirect outbound is disabled
+  IPv4 WCCP Redirect inbound is disabled
+  IPv4 WCCP Redirect exclude is disabled
+
+iii.
+Internet address is: 10.0.0.254/24
+MAC:Hardware is Ethernet SVI, address is 0c0d.cb47.8001 (bia 0c0d.cb47.8001)
+Vlan1 is up, line protocol is up 
+
+iv.
+ip address 10.0.0.253 255.255.255.0
+show ip interface vlan1
+Internet address is 10.0.0.253/24
+
+d)
+i.GigabitEthernet0/0 is up, line protocol is up
+ii.show interface gi0/0
+Mac address: 0c0d.cb47.0000 (bia 0c0d.cb47.0000)
+iii.
+speed:1000000 Kbit/sec
+Duplex: Auto duplex
+
+e)
+line console 0
+password cisco
+login
+
+line vty 0 15
+password cisco
+login
+
+enable secret class
+
+6.
+hostname R1
+configure terminal
+interface FastEthernet0/0
+ip address 10.0.0.253 255.255.255.0
+no shutdown
+end
+wr
+
+configure terminal
+interface FastEthernet0/1
+ip address 10.0.1.253 255.255.255.0
+no shutdown
+end
+wr
+
+line console 0
+password cisco
+login
+
+line vty 0 15
+password cisco
+login
+
+enable secret class
+
+7.
+ping 10.0.1.2 no pc 3 para fazer ligação com o pc 4, R1 ve os pacotes entre o pc3 e o pc4.
+ping 10.0.0.2 no pc 1 para fazer ligação com o pc 2, R1 nao ve os pacotes entre o pc1 e o pc2 porque o switch envia para onde é preciso, já o hub envia para todo o lado.
+
+8.
+a)
+O objetivo da tabela de endereços MAC é facilitar o reencaminhamento de quadros Ethernet numa rede local.
+b)Em um switch, ele limpa os endereços MAC aprendidos dinamicamente da tabela de endereços MAC. Isso significa que o switch esquecerá todas as associações entre os endereços MAC e as portas do switch.
+c)apos desligar os Pcs os endereços MAC aprendidos dinamicamente voltaram a aparecer.
+d)switchport port-security mac-address aaaa.bbbb.cccc
+e)
+aging Port-security aging commands
+mac-address Secure mac address
+maximum Max secure addresses
+violation Security violation mode
+
+f)
+Vlan    Mac Address   Type    Ports
+ 1    aaaa.bbbb.cccc DYNAMIC  Gi0/1
+ 1    cco1.0fb3.0000 DYNAMIC  Gi0/0
+Total Mac Addresses for this criterion: 2
+
+g)Nao é possivel ligar outra maquina à porta porque esta ocupada, caso invertessemos as porta ja seria possivel
+
